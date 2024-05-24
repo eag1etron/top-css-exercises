@@ -8,20 +8,37 @@ body {
   font-weight: 800;
 }
 
+.para {
+  font-size: 22px;
+}
+
+/* moved .small-para selector to after .para selector,
+   last rule takes precedence for selectors with equal specificity.
+*/
 .small-para {
   font-size: 14px;
   font-weight: 800;
 }
 
-.para {
-  font-size: 22px;
-}
-
+/* solution: removed this class selector
+   and add id selector #confirm-button
+   or
+   move this selector below the button selector.
 .confirm {
   background: green;
   color: white;
   font-weight: bold;
-} 
+}
+*/
+
+/* solution #1: add this id selector */
+/*
+#confirm-button {
+  background: green;
+  color: white;
+  font-weight: bold;
+}
+*/
 
 .button {
   background-color: rgb(255, 255, 255);
@@ -29,14 +46,40 @@ body {
   font-size: 20px;
 }
 
+/* solution #2: move this rule below .button rule. */
+.confirm {
+  background: green;
+  color: white;
+  font-weight: bold;
+}
+
+/* delete this selector.
+   create div.child selector below div.text selector.
 .child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
 }
+*/
 
 div.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
 }
+
+/* chained selector */
+div.child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+/* descendant combinator works also */
+/*
+div .child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
+}
+*/
