@@ -1,1 +1,31 @@
-/* Add CSS Styling */
+/* TOP-Foundations-CSS-Exercise 02: Class and ID Selectors */
+
+.elem-odd {
+  background-color: #ffc0cb;
+  font-family: Verdana, "Lucida Sans", sans-serif;
+}
+
+.font-size-adj {
+  font-size: 24px;
+}
+
+#elem-2 {
+  color: rgb(0, 0, 255);
+  font-size: 36px;
+}
+
+#elem-4 {
+  background-color: lightgreen;
+  /* font-size: 24px; removed this line, use .font-size-adj */
+  font-weight: bold;
+}
+
+/* 
+  After looking at the solution, I noticed that:
+  all class selectors should be listed before ID selectors.
+	Makes sense - for readability and to find selectors easily.
+	Thus it makes sense to alphabetize them also.
+
+  p.s. don't forgot to use git atomic commits! 
+	I am committing after each exercise. Is this enough?
+*/
