@@ -1,1 +1,17 @@
-/* Add CSS Styling */
+/* TOP-Foundations-CSS-Exercise 03: Grouping Selectors */
+
+/* grouped class selectors - common declarations (styles) */
+.click-bait-1,
+.click-bait-2 {
+  font-size: 28px;
+  font-family: Helvetica, "Times New Roman", sans-serif;
+}
+
+.click-bait-1 {
+  background-color: green;
+  color: white;
+}
+
+.click-bait-2 {
+  background-color: red;
+}
