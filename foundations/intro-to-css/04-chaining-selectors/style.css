@@ -1,1 +1,10 @@
-/* Add CSS Styling */
+/* TOP-Foundations-CSS-Exercise 04: Chaining Selectors */
+
+.avatar.distorted {
+  height: 400px;
+  width: 200px;
+}
+.avatar.proportioned {
+  height: auto;
+  width: 300px;
+}
