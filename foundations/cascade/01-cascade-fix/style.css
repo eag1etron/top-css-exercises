@@ -8,20 +8,15 @@ body {
   font-weight: 800;
 }
 
-.small-para {
-  font-size: 14px;
-  font-weight: 800;
-}
-
 .para {
   font-size: 22px;
 }
 
-.confirm {
-  background: green;
-  color: white;
-  font-weight: bold;
-} 
+/* Move below .para, same specificity, last rule wins. */
+.small-para {
+  font-size: 14px;
+  font-weight: 800; /* this line can be removed, f-w declared in group above */
+}
 
 .button {
   background-color: rgb(255, 255, 255);
@@ -29,14 +24,22 @@ body {
   font-size: 20px;
 }
 
-.child {
-  color: rgb(0, 0, 0);
-  font-weight: 800;
-  font-size: 14px;
+/* Move below .button, same specificity, last rule wins. */
+.confirm {
+  background: green;
+  color: white;
+  font-weight: bold;
 }
 
 div.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
+}
+
+/* chained .text */
+.text.child {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 800;
 }
